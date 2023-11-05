@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "image": "https://i.ibb.co/bz6nvq1/toyota-corolla.jpg"
+  },
+  {
+    "id": 2,
+    "brand": "Honda",
+    "image": "https://i.ibb.co/sK7DY8h/honda-civic.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Ford",
+    "image": "https://i.ibb.co/SrwPvK3/ford-mustang.jpg"
+  },
+  {
+    "id": 4,
+    "brand": "BMW",
+    "image": "https://i.ibb.co/gWpZQXN/bmw-3-series.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "Audi",
+    "image": "https://i.ibb.co/bz6nvq1/toyota-corolla.jpg"
+  },
+  {
+    "id": 6,
+    "brand": "Mercedes-Benz",
+    "image": "https://i.ibb.co/k1Xdwcm/mercedes-c-class.jpg"
+  }
+]

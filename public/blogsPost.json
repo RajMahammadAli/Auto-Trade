@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Maximizing Fuel Efficiency",
+    "date": "November 10, 2023",
+    "content": "Learn how to get the most mileage out of your car and save on fuel costs.",
+    "image": "https://i.ibb.co/bz6nvq1/toyota-corolla.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Car Safety: A Comprehensive Guide",
+    "date": "October 22, 2023",
+    "content": "Discover the latest safety features and tips to keep you and your loved ones safe on the road.",
+    "image": "https://i.ibb.co/sK7DY8h/honda-civic.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Electric Cars: The Future of Driving",
+    "date": "September 5, 2023",
+    "content": "Explore the world of electric vehicles and how they are shaping the future of driving.",
+    "image": "https://i.ibb.co/SrwPvK3/ford-mustang.jpg"
+  }
+]

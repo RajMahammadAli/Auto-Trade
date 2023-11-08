@@ -13,6 +13,7 @@ import Register from "./components/Register/Register.jsx";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
 import { ToastContainer } from "react-toastify";
 import BrandProducts from "./components/BrandProducts/BrandProducts.jsx";
+import ProductDetails from "./components/ProductDetails/ProductDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,8 +37,21 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/productDetails/:id",
+        element: (
+          <PrivateRoute>
+            <ProductDetails></ProductDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch(`/productDetails.json`),
+      },
       { path: "/logIn", element: <LogIn></LogIn> },
-      { path: `/brandProducts/:id`, element: <BrandProducts></BrandProducts> },
+      {
+        path: `/brandProducts/:id`,
+        element: <BrandProducts></BrandProducts>,
+        loader: () => fetch(`/BrandDetails.json`),
+      },
       { path: "/register", element: <Register></Register> },
     ],
   },

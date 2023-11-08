@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/bz6nvq1/toyota-corolla.jpg",
+    "name": "Toyota Camry",
+    "brand": "Toyota",
+    "type": "Camry",
+    "price": "$25,000",
+    "rating": 3,
+    "description": "The Toyota Camry is a mid-size sedan known for its reliability and fuel efficiency. It offers a comfortable ride and advanced safety features.",
+    "specs": {
+      "Engine": "2.5L 4-cylinder",
+      "Horsepower": "203 hp",
+      "Fuel Economy": "28/39 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/sK7DY8h/honda-civic.jpg",
+    "name": "Toyota Corolla",
+    "brand": "Toyota",
+    "type": "Corolla",
+    "price": "$22,500",
+    "rating": 2,
+    "description": "The Toyota Corolla is a compact car known for its affordability and fuel efficiency. It's a great choice for daily commuting.",
+    "specs": {
+      "Engine": "1.8L 4-cylinder",
+      "Horsepower": "139 hp",
+      "Fuel Economy": "30/38 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/SrwPvK3/ford-mustang.jpg",
+    "name": "Toyota RAV4",
+    "brand": "Toyota",
+    "type": "RAV4",
+    "price": "$30,000",
+    "rating": 5,
+    "description": "The Toyota RAV4 is a compact SUV known for its spacious interior and off-road capabilities. It's a versatile and reliable choice.",
+    "specs": {
+      "Engine": "2.5L 4-cylinder",
+      "Horsepower": "203 hp",
+      "Fuel Economy": "27/35 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/gWpZQXN/bmw-3-series.jpg",
+    "name": "Toyota Prius",
+    "brand": "Toyota",
+    "type": "Prius",
+    "price": "$28,000",
+    "rating": 4,
+    "description": "The Toyota Prius is a hybrid car known for its exceptional fuel efficiency and eco-friendly features. It's a great choice for eco-conscious drivers.",
+    "specs": {
+      "Engine": "1.8L 4-cylinder hybrid",
+      "Horsepower": "121 hp",
+      "Fuel Economy": "54/50 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/SrwPvK3/ford-mustang.jpg",
+    "name": "Honda Civic",
+    "brand": "Honda",
+    "type": "Civic",
+    "price": "$24,500",
+    "rating": 2,
+    "description": "The Honda Civic is a popular compact car known for its fuel efficiency and practicality. It offers a comfortable ride and modern features.",
+    "specs": {
+      "Engine": "2.0L 4-cylinder",
+      "Horsepower": "158 hp",
+      "Fuel Economy": "30/38 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/DpC8hGG/pexels-dawwaper-18961838.jpg",
+    "name": "Honda Accord",
+    "brand": "Honda",
+    "type": "Accord",
+    "price": "$28,000",
+    "rating": 3,
+    "description": "The Honda Accord is a mid-size sedan known for its spacious interior and reliable performance. It offers advanced safety features and technology.",
+    "specs": {
+      "Engine": "1.5L 4-cylinder",
+      "Horsepower": "192 hp",
+      "Fuel Economy": "30/38 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/9pjD4ST/pexels-sebastian-pichard-6894420.jpg",
+    "name": "Honda CR-V",
+    "brand": "Honda",
+    "type": "CR-V",
+    "price": "$29,500",
+    "rating": 4,
+    "description": "The Honda CR-V is a compact SUV with a spacious and comfortable interior. It's a versatile choice for families and outdoor enthusiasts.",
+    "specs": {
+      "Engine": "1.5L 4-cylinder",
+      "Horsepower": "190 hp",
+      "Fuel Economy": "28/34 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/pJ7Yhb7/pexels-zachary-vessels-6794815.jpg",
+    "name": "Honda Fit",
+    "brand": "Honda",
+    "type": "Fit",
+    "price": "$21,500",
+    "rating": 5,
+    "description": "The Honda Fit is a subcompact car known for its versatility and spacious cargo area. It's ideal for city driving and parking.",
+    "specs": {
+      "Engine": "1.5L 4-cylinder",
+      "Horsepower": "130 hp",
+      "Fuel Economy": "33/40 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/nbTMjzb/pexels-adrian-dorobantu-2127732.jpg",
+    "name": "Ford Mustang",
+    "brand": "Ford",
+    "type": "Mustang",
+    "price": "$32,000",
+    "rating": 4,
+    "description": "The Ford Mustang is an iconic muscle car known for its powerful performance and classic design. It's a symbol of American automotive history.",
+    "specs": {
+      "Engine": "5.0L V8",
+      "Horsepower": "450 hp",
+      "Fuel Economy": "15/24 mpg (city/highway)",
+      "Seats": "4"
+    }
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/3CRT9FB/pexels-avinash-patel-544542.jpg",
+    "name": "Ford F-150",
+    "brand": "Ford",
+    "type": "F-150",
+    "price": "$35,500",
+    "rating": 3,
+    "description": "The Ford F-150 is a full-size pickup truck known for its towing and hauling capabilities. It's a top choice for work and play.",
+    "specs": {
+      "Engine": "3.3L V6",
+      "Horsepower": "290 hp",
+      "Fuel Economy": "20/24 mpg (city/highway)",
+      "Seats": "6"
+    }
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/wsjpmmZ/pexels-erik-mclean-18038889.jpg",
+    "name": "Ford Escape",
+    "brand": "Ford",
+    "type": "Escape",
+    "price": "$28,000",
+    "rating": 2,
+    "description": "The Ford Escape is a compact SUV with a comfortable interior. It's designed for urban adventures and daily commuting.",
+    "specs": {
+      "Engine": "1.5L 3-cylinder",
+      "Horsepower": "181 hp",
+      "Fuel Economy": "44/37 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/DzZvsx3/pexels-jan-kop-iva-3354648.jpg",
+    "name": "Ford Explorer",
+    "brand": "Ford",
+    "type": "Explorer",
+    "price": "$36,500",
+    "rating": 5,
+    "description": "The Ford Explorer is a mid-size SUV known for its spacious cabin and advanced safety features. It's perfect for family adventures.",
+    "specs": {
+      "Engine": "2.3L 4-cylinder",
+      "Horsepower": "300 hp",
+      "Fuel Economy": "21/28 mpg (city/highway)",
+      "Seats": "7"
+    }
+  },
+
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/HKLSj3R/pexels-mike-bird-99435.jpg",
+    "name": "BMW 3 Series",
+    "brand": "BMW",
+    "type": "3 Series",
+    "price": "$42,000",
+    "rating": 2,
+    "description": "The BMW 3 Series is a luxury compact car known for its dynamic performance and high-quality interior. It's a driver's delight.",
+    "specs": {
+      "Engine": "2.0L 4-cylinder",
+      "Horsepower": "255 hp",
+      "Fuel Economy": "26/36 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/dg6SFg2/pexels-mike-bird-18143904.jpg",
+    "name": "BMW 5 Series",
+    "brand": "BMW",
+    "type": "5 Series",
+    "price": "$53,500",
+    "rating": 4,
+    "description": "The BMW 5 Series is a mid-size luxury sedan known for its elegance and advanced technology. It's perfect for executive transportation.",
+    "specs": {
+      "Engine": "2.0L 4-cylinder",
+      "Horsepower": "248 hp",
+      "Fuel Economy": "25/33 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/X52J7mX/pexels-mike-bird-18143905.jpg",
+    "name": "BMW X5",
+    "brand": "BMW",
+    "type": "X5",
+    "price": "$58,000",
+    "rating": 3,
+    "description": "The BMW X5 is a luxury mid-size SUV known for its powerful engines and high-quality interior. It's an ideal choice for luxury travel.",
+    "specs": {
+      "Engine": "3.0L 6-cylinder",
+      "Horsepower": "335 hp",
+      "Fuel Economy": "21/26 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/XC7Z7MQ/pexels-mike-bird-18143906.jpg",
+    "name": "BMW 7 Series",
+    "brand": "BMW",
+    "type": "7 Series",
+    "price": "$70,500",
+    "rating": 5,
+    "description": "The BMW 7 Series is a full-size luxury sedan known for its opulent features and smooth ride. It's a symbol of prestige and comfort.",
+    "specs": {
+      "Engine": "3.0L 6-cylinder",
+      "Horsepower": "335 hp",
+      "Fuel Economy": "22/29 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/2grj91X/pexels-auto-records-10292233.jpg",
+    "name": "Mercedes-Benz C-Class",
+    "brand": "Mercedes-Benz",
+    "type": "C-Class",
+    "price": "$45,000",
+    "rating": 5,
+    "description": "The Mercedes-Benz C-Class is a luxury compact car known for its opulent interior and advanced technology. It's a statement of sophistication.",
+    "specs": {
+      "Engine": "2.0L 4-cylinder",
+      "Horsepower": "255 hp",
+      "Fuel Economy": "23/35 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/4ps4fZr/pexels-evgeni-adutskevich-14655163.jpg",
+    "name": "Mercedes-Benz E-Class",
+    "brand": "Mercedes-Benz",
+    "type": "E-Class",
+    "price": "$55,000",
+    "rating": 4,
+    "description": "The Mercedes-Benz E-Class is a luxury mid-size sedan known for its lavish interior and advanced safety features. It's a symbol of luxury and performance.",
+    "specs": {
+      "Engine": "2.0L 4-cylinder",
+      "Horsepower": "255 hp",
+      "Fuel Economy": "22/32 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co/tqfrJqn/pexels-mike-bird-193991.jpg",
+    "name": "Mercedes-Benz GLE",
+    "brand": "Mercedes-Benz",
+    "type": "GLE",
+    "price": "$62,500",
+    "rating": 3,
+    "description": "The Mercedes-Benz GLE is a luxury SUV known for its spacious interior and powerful engine options. It's a perfect blend of comfort and performance.",
+    "specs": {
+      "Engine": "3.0L 6-cylinder",
+      "Horsepower": "362 hp",
+      "Fuel Economy": "19/26 mpg (city/highway)",
+      "Seats": "5"
+    }
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/z7bCtTT/pexels-mike-bird-205740.jpg",
+    "name": "Mercedes-Benz S-Class",
+    "brand": "Mercedes-Benz",
+    "type": "S-Class",
+    "price": "$78,000",
+    "rating": 4,
+    "description": "The Mercedes-Benz S-Class is a flagship luxury sedan known for its impeccable craftsmanship and cutting-edge technology. It's the pinnacle of automotive excellence.",
+    "specs": {
+      "Engine": "3.0L 6-cylinder",
+      "Horsepower": "429 hp",
+      "Fuel Economy": "19/28 mpg (city/highway)",
+      "Seats": "5"
+    }
+  }
+]

@@ -6,13 +6,12 @@ export default function ({ brandName }) {
   const navigate = useNavigate();
 
   const handleBrandProducts = () => {
-    console.log("Hello world");
     navigate(`/brandProducts/${id}`);
   };
   return (
     <>
       <div onClick={handleBrandProducts} className="cursor-pointer">
-        <div className="card w-96 bg-base-100 shadow-xl image-full my-5 lg:my-0">
+        <div className="card bg-base-100 shadow-xl image-full my-5 lg:my-0">
           <figure>
             <img src={image} alt="Shoes" />
           </figure>

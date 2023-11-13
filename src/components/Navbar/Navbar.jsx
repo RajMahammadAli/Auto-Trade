@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { FaUser } from "react-icons/fa";
 
 export default function () {
   const { user, userLogOut } = useContext(AuthContext);
@@ -70,27 +71,40 @@ export default function () {
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {navlinks}
+          <ul className="menu menu-horizontal px-1">{navlinks}</ul>
+          <div className="navbar-end">
             {user ? (
               <div className="flex justify-center items-center space-x-3">
-                <NavLink onClick={handleLogOut}>
-                  <span className="mr-2 text-base font-bold">log out</span>
-                </NavLink>
+                <div className="flex justify-center items-center">
+                  <div className="mr-2">
+                    <p>{user.displayName}</p>
+                  </div>
+                  <div>
+                    {user.photoURL ? (
+                      <img
+                        className="w-12 rounded-full"
+                        src={user.photoURL}
+                      ></img>
+                    ) : (
+                      <FaUser></FaUser>
+                    )}
+                  </div>
+                </div>
+                <button onClick={handleLogOut} className="btn mr-2">
+                  log out
+                </button>
               </div>
             ) : (
               <div>
-                <NavLink
-                  to="/Login"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#196EAF]" : ""
-                  }
-                >
-                  <span className="mr-2 text-base font-bold">Login</span>
-                </NavLink>
+                <Link to="/register" className="btn mr-2">
+                  Register
+                </Link>
+                <Link to="/login" className="btn">
+                  Log In
+                </Link>
               </div>
             )}
-          </ul>
+          </div>
         </div>
       </div>
     </>

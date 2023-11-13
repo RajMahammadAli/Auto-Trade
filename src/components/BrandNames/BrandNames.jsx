@@ -6,7 +6,9 @@ export default function () {
   useEffect(() => {
     fetch(`brandCar.json`)
       .then((res) => res.json())
-      .then((data) => setBrandNames(data));
+      .then((data) => {
+        setBrandNames(data), console.log(data);
+      });
   }, []);
   return (
     <>

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
+import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 const AddProductPage = () => {
+  const navigate = useNavigate();
   const [product, setProduct] = useState({
     image: "",
     name: "",
@@ -25,6 +29,18 @@ const AddProductPage = () => {
 
     // For this example, we'll just display the product data in the console.
     console.log(product);
+
+    fetch(`http://localhost:5000/products`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(product),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast("Product added successfully");
+        navigate("/");
+      });
   };
 
   return (
@@ -128,6 +144,16 @@ const AddProductPage = () => {
             onChange={handleInputChange}
           />
         </div>
+        <Toaster
+          toastOptions={{
+            className: "",
+            style: {
+              border: "1px solid #713200",
+              padding: "16px",
+              color: "#713200",
+            },
+          }}
+        />
         <button
           type="submit"
           className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"

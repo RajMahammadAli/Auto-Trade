@@ -19,9 +19,6 @@ export default function () {
                 is just a click away. Start your journey today!
               </p>
             </div>
-            <button className="btn bg-[#196EAF] border-none">
-              Get Started
-            </button>
           </div>
         </div>
       </div>

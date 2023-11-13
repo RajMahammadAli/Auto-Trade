@@ -5,9 +5,16 @@ import Footer from "../components/Footer/Footer";
 export default function () {
   return (
     <>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <div className="flex flex-col min-h-screen">
+        {/* Content Wrapper */}
+        <div className="flex-grow">
+          <Navbar></Navbar>
+          <Outlet></Outlet>
+        </div>
+
+        {/* Footer */}
+        <Footer></Footer>
+      </div>
     </>
   );
 }

@@ -1,12 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import StarRating from "./StarRating";
 
 export default function ({ product }) {
-  const { id, image, name, brand, type, price, rating } = product;
-  const navigate = useNavigate();
-  const handleProductDetails = () => {
-    navigate(`/productDetails/${id}`);
-  };
+  const { _id, image, name, brand, type, price, rating } = product;
+  console.log(_id);
+
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
@@ -23,10 +22,12 @@ export default function ({ product }) {
           </div>
 
           <div className="card-actions justify-center">
-            <button onClick={handleProductDetails} className="btn btn-primary">
+            <Link to={`/productDetails/${_id}`} className="btn btn-primary">
               Details
-            </button>
-            <button className="btn btn-primary">Update</button>
+            </Link>
+            <Link to={`/updateForm/${_id}`} className="btn btn-primary">
+              Update
+            </Link>
           </div>
         </div>
       </div>

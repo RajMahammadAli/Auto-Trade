@@ -1,12 +1,34 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Product from "../Product/Product";
+import { useEffect, useState } from "react";
 
 export default function () {
+  const [demoBrandProducts, setDemoProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const details = useLoaderData();
   const { id } = useParams();
   const parseId = parseInt(id);
   const brandNames = details.find((detail) => detail.id === parseId);
+
+  const brand = brandNames.brandName;
   const toyotaAdd = brandNames?.advertisements || [];
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/products`)
+      .then((res) => res.json())
+      .then((data) => {
+        // Filter data based on the desired brand (in this case, "Toyota")
+        const productsByBrand = data.filter(
+          (item) => item.brand === brand && !item.email
+        );
+        setDemoProducts(productsByBrand);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      });
+  }, [brand]); // Add brand as a dependency to the useEffect
 
   if (!brandNames) {
     return <p>Brand not found</p>;
@@ -43,26 +65,20 @@ export default function () {
       {/* Carousel ends here */}
 
       <div className="container my-14 mx-auto">
-        {brandNames.brandProducts?.length === 0 ? (
+        {loading ? ( // Display loading message while data is being fetched
+          // <p>Loading...</p>
+          <div className="w-full flex justify-center items-center h-[200px]">
+            <span className="loading loading-infinity loading-lg"></span>
+          </div>
+        ) : demoBrandProducts.length === 0 ? (
           <div>
-            <p>
-              No products available for {brandNames.brandName} at the moment.
-            </p>
+            <p>No product available right now</p>{" "}
           </div>
         ) : (
           <div className="w-full md:grid grid-cols-3 gap-4 mx-auto">
-            {brandNames.brandProducts ? (
-              brandNames.brandProducts.map((product, index) => (
-                <Product key={index} product={product}></Product>
-              ))
-            ) : (
-              <div>
-                <p>
-                  No products available for {brandNames.brandName} at the
-                  moment.
-                </p>
-              </div>
-            )}
+            {demoBrandProducts.map((product, index) => (
+              <Product key={index} product={product}></Product>
+            ))}
           </div>
         )}
       </div>

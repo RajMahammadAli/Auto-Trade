@@ -14,11 +14,14 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute.jsx";
 import { ToastContainer } from "react-toastify";
 import BrandProducts from "./components/BrandProducts/BrandProducts.jsx";
 import ProductDetails from "./components/ProductDetails/ProductDetails.jsx";
+import Error404 from "./components/Error404/Error404.jsx";
+import UpdateForm from "./components/UpdataForm/UpdateForm.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
+    errorElement: <Error404></Error404>,
     children: [
       { path: "/", element: <Home></Home> },
       {
@@ -36,6 +39,7 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
+        loader: () => fetch(`http://localhost:5000/products`),
       },
       {
         path: "/productDetails/:id",
@@ -44,7 +48,16 @@ const router = createBrowserRouter([
             <ProductDetails></ProductDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch(`/productDetails.json`),
+        loader: () => fetch(`http://localhost:5000/products`),
+      },
+      {
+        path: "/updateForm/:id",
+        element: (
+          <PrivateRoute>
+            <UpdateForm></UpdateForm>
+          </PrivateRoute>
+        ),
+        loader: () => fetch(`http://localhost:5000/products`),
       },
       { path: "/logIn", element: <LogIn></LogIn> },
       {

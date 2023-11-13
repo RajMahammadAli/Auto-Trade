@@ -1,6 +1,6 @@
 # Features of My website
 
--Modern Web Application: Utilizes cutting-edge web technologies to deliver a modern and responsive user experience. Implements a sleek and intuitive design for seamless navigation.
+**Modern Web Application: Utilizes cutting-edge web technologies to deliver a modern and responsive user experience. Implements a sleek and intuitive design for seamless navigation.
 
 -Dynamic Product Management: Allows users to effortlessly manage product data with features like adding, updating, and deleting products. Provides an intuitive user interface for a smooth product management experience.
 

@@ -28,7 +28,7 @@ export default function () {
       email,
     };
 
-    fetch(`http://localhost:5000/products`, {
+    fetch(`https://server-side-brand-shop.vercel.app/products`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(products),

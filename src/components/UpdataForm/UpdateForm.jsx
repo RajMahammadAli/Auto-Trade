@@ -37,7 +37,7 @@ export default function () {
     // You can handle the form submission here (e.g., send data to the server).
     // For this example, we'll just display the updated product data in the console.
     console.log(updatedProduct);
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://server-side-brand-shop.vercel.app/products/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedProduct),

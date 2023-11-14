@@ -39,7 +39,8 @@ const router = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () =>
+          fetch(`https://server-side-brand-shop.vercel.app/products`),
       },
       {
         path: "/productDetails/:id",
@@ -48,7 +49,8 @@ const router = createBrowserRouter([
             <ProductDetails></ProductDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () =>
+          fetch(`https://server-side-brand-shop.vercel.app/products`),
       },
       {
         path: "/updateForm/:id",
@@ -57,7 +59,8 @@ const router = createBrowserRouter([
             <UpdateForm></UpdateForm>
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () =>
+          fetch(`https://server-side-brand-shop.vercel.app/products`),
       },
       { path: "/logIn", element: <LogIn></LogIn> },
       {

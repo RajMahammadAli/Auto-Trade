@@ -8,9 +8,12 @@ export default function MyCartPage() {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/products?email=${user.email}`, {
-        withCredentials: true,
-      })
+      fetch(
+        `https://server-side-brand-shop.vercel.app/products?email=${user.email}`,
+        {
+          withCredentials: true,
+        }
+      )
         .then((res) => res.json())
         .then((data) => setCarts(data))
         .catch((error) => console.error("Error fetching cart data:", error));
@@ -28,7 +31,7 @@ export default function MyCartPage() {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`https://server-side-brand-shop.vercel.app/products/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json()) // Corrected line

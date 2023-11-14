@@ -30,7 +30,7 @@ const AddProductPage = () => {
     // For this example, we'll just display the product data in the console.
     console.log(product);
 
-    fetch(`http://localhost:5000/products`, {
+    fetch(`https://server-side-brand-shop.vercel.app/products`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(product),

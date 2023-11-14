@@ -14,7 +14,7 @@ export default function () {
   const toyotaAdd = brandNames?.advertisements || [];
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products`)
+    fetch(`https://server-side-brand-shop.vercel.app/products`)
       .then((res) => res.json())
       .then((data) => {
         // Filter data based on the desired brand (in this case, "Toyota")

@@ -1,13 +1,14 @@
-# Features of My website
+## Recent Project: 🚗 Auto Trade
 
-**Modern Web Application**: Utilizes cutting-edge web technologies to deliver a modern and responsive user experience. Implements a sleek and intuitive design for seamless navigation.
+Auto Trade is a dynamic web application built using React.js, Tailwind CSS, DaisyUI, Firebase, MongoDB, and hosted on Vercel. The platform allows users to explore and purchase various brand cars such as Toyota, BMW, and more. Additionally, users can read insightful blogs, calculate car loans, register, and log in using either email/password or Google credentials. The website also features a shopping cart functionality, enabling users to add their desired products.
 
-**Dynamic Product Management**: Allows users to effortlessly manage product data with features like adding, updating, and deleting products. Provides an intuitive user interface for a smooth product management experience.
+### Live Demo
+Explore Auto Trade: [Auto Trade Live](https://brand-car.firebaseapp.com)
 
-**User Authentication**: Ensures data security and user-specific interactions through robust authentication. Implements user registration and login functionalities.
-
-**Responsive Design**: Ensures a consistent and visually appealing experience across a variety of devices and screen sizes. Mobile-friendly design for on-the-go accessibility.
-
-**Scalable and Maintainable Codebase**: Adheres to best coding practices for a scalable and maintainable codebase. Well-documented code for easy understanding and future development.
-
-**Website Live Link**: https://brand-car.web.app
+### Technologies Used
+- React.js
+- Tailwind CSS
+- DaisyUI
+- Firebase
+- MongoDB
+- Vercel
